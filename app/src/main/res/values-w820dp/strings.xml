@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hole_2">Hole 2:</string>
+    <string name="hole_1">Hole 1:</string>
+    <string name="hole_3">Hole 3:</string>
+    <string name="hole_5">Hole 5:</string>
+    <string name="hole_6">Hole 6:</string>
+    <string name="hole_7">Hole 7:</string>
+    <string name="hole_8">Hole 8:</string>
+    <string name="hole_9">Hole 9:</string>
+    <string name="hole_10">Hole 10:</string>
+    <string name="hole_1_is_top_hole_at_0_degrees">Hole 1 is top hole at 0 degrees</string>
+    <string name="speedText">Speed</string>
+    <string name="formula_String">Speed = (Surface Ft X 3.82) / Diameter</string>
+    <string name="surface_ft">Surface Ft:</string>
+    <string name="diameterString">Diameter:</string>
+    <string name="calculateString">Calculate</string>
+    <string name="feedString">Feed</string>
+    <string name="fpt">FPT:</string>
+    <string name="number_flutes">Number Flutes:</string>
+    <string name="speed_feed_calculator">Speed/Feed Calculator</string>
+    <string name="circle_pattern">Circle Pattern</string>
+    <string name="g_codes">G CODES</string>
+    <string name="m_codes">M CODES</string>
+</resources>

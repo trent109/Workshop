@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trent.workshop">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        >
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mCodesAct" />
+        <activity android:name=".gCodesAct" />
+        <activity android:name=".circlePattern" />
+        <activity android:name=".threeHoleAct" />
+        <activity android:name=".fiveHoleAct" />
+        <activity android:name=".sixHoleAct" />
+        <activity android:name=".sevenHoleAct" />
+        <activity android:name=".eightHoleAct" />
+        <activity android:name=".nineHoleAct" />
+        <activity android:name=".tenHoleAct" />
+        <activity android:name=".elevenHoleAct" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".speedAndFeed"></activity>
+    </application>
+
+</manifest>

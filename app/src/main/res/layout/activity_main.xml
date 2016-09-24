@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.trent.workshop.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_codes"
+        android:textSize="@dimen/menuTextSize"
+        android:clickable="true"
+        android:onClick="mCodeIntent"
+        android:id="@+id/mCodeTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/g_codes"
+        android:textSize="@dimen/menuTextSize"
+        android:onClick="gCodeIntent"
+        android:id="@+id/gCodeTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/circle_pattern"
+    android:textSize="@dimen/menuTextSize"
+    android:onClick="circleIntent"
+    android:id="@+id/cirleTextView"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:clickable="true"
+    android:layout_marginTop="113dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/speed_feed_calculator"
+        android:textSize="@dimen/menuTextSize"
+        android:onClick="speedIntent"
+        android:id="@+id/speedTextView"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:layout_marginTop="154dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.trent.workshop.circlePattern">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TableLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/textViewTable">
+      <TableRow android:layout_gravity="center_vertical"
+          android:gravity="center_vertical|center_horizontal">
+              <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:text="Hole Patterns"
+    android:gravity="center_vertical|center_horizontal"
+    android:textIsSelectable="false"
+    android:id="@+id/holePatternTextView"
+    android:textSize="20dp"
+    />
+  </TableRow>
+      <TableRow android:layout_gravity="center_vertical"
+          android:gravity="center_vertical|center_horizontal">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/hole_1_is_top_hole_at_0_degrees"
+              android:gravity="center_vertical|center_horizontal"
+              android:textIsSelectable="false"
+              android:id="@+id/instructions"
+              android:textSize="12dp"
+              />
+      </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+       android:layout_below="@id/textViewTable">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/three_hole"
+                android:id="@+id/threeHoletextView"
+                android:layout_gravity="center"
+                android:onClick="threeHoleIntent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/five_hole"
+                android:id="@+id/fiveHoletextView"
+                android:layout_gravity="center"
+                android:onClick="fiveHoleIntent"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/circle3"
+                android:src="@drawable/threehole"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:onClick="threeHoleIntent"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/circle4"
+                android:src="@drawable/fivehole"
+                android:onClick="fiveHoleIntent"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Six Hole"
+                android:id="@+id/sixHoletextView"
+                android:layout_gravity="center"
+                android:onClick="sixHoleIntent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Seven Hole"
+                android:id="@+id/sevenHoleTextView"
+                android:layout_gravity="center"
+                android:onClick="sevenHoleIntent"/>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:id="@+id/circle5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sixhole"
+                android:onClick="sixHoleIntent"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/circle6"
+                android:src="@drawable/sevenhole"
+                android:onClick="sevenHoleIntent"
+                 />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Eight Hole"
+                android:id="@+id/eightHoleTextView"
+                android:layout_gravity="center"
+                android:onClick="eightHoleIntent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nine Hole"
+                android:id="@+id/nineHoleTextView"
+                android:layout_gravity="center"
+                android:onClick="nineHoleIntent"/>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:id="@+id/circle7"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/eighthole"
+                android:onClick="eightHoleIntent"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/circle8"
+                android:src="@drawable/ninehole"
+                android:onClick="nineHoleIntent"
+                />
+
+        </TableRow>
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ten Hole"
+            android:id="@+id/tenHoleTextView"
+            android:layout_gravity="center"
+            android:onClick="tenHoleIntent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Eleven Hole"
+            android:id="@+id/elevenHoleTextView"
+            android:layout_gravity="center"
+            android:onClick="elevenHoleIntent"/>
+    </TableRow>
+        <TableRow>
+            <ImageView
+                android:id="@+id/circle10"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/tenhole"
+                android:onClick="tenHoleIntent"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/circle11"
+                android:src="@drawable/elevenhole"
+                android:onClick="elevenHoleIntent"
+                />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
+</ScrollView>

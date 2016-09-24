@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/threeHoleImageView"
+            android:layout_height="@dimen/imageView_height"
+            android:src="@drawable/threehole"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Circle Dia."
+                    android:id="@+id/circleDiamtextView"
+                    android:textSize="@dimen/font_size"
+                    android:paddingRight="@dimen/circle_textview_padding"
+                    android:paddingLeft="@dimen/left_padding"/>
+
+                <EditText
+                    android:layout_width="@dimen/editText_width"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/diameterEditText"
+                    android:gravity="center_vertical|center_horizontal"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Calculate"
+                    android:paddingLeft ="@dimen/circle_textview_padding"
+                    android:id="@+id/calculateButton"
+                    android:onClick="onClickCalculate"
+                    android:width="@dimen/calculate_button"
+                    android:gravity="center_horizontal|center_vertical"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hole_1"
+                    android:id="@+id/hole1textView"
+                    android:textSize="@dimen/font_size"
+                    android:paddingRight="@dimen/right_padding"
+                    android:paddingLeft="@dimen/left_padding"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hole1XtextView"
+                    android:textSize="@dimen/font_size"
+                    android:paddingRight="@dimen/right_padding"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hole1YtextView"
+                    android:textSize="@dimen/font_size" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hole_2"
+                    android:id="@+id/hole2textView"
+                    android:textSize="@dimen/font_size"
+                    android:paddingRight="@dimen/right_padding"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:paddingLeft="@dimen/left_padding"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hole2XtextView"
+                    android:textSize="@dimen/font_size"
+                    android:paddingRight="@dimen/right_padding"
+                    android:layout_marginTop="@dimen/top_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hole2YtextView"
+                    android:textSize="@dimen/font_size"
+                    android:layout_marginTop="@dimen/top_margin"/>/>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hole_3"
+                    android:id="@+id/hole3textView"
+                    android:textSize="@dimen/font_size"
+                    android:paddingRight="@dimen/right_padding"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:paddingLeft="@dimen/left_padding"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hole3XtextView"
+                    android:textSize="@dimen/font_size"
+                    android:paddingRight="@dimen/right_padding"
+                    android:layout_marginTop="@dimen/top_margin"/>/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hole3YtextView"
+                    android:textSize="@dimen/font_size"
+
+                    android:layout_marginTop="@dimen/top_margin"/>/>
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+

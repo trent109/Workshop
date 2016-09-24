@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.trent.workshop.speedAndFeed"
+    android:gravity="fill_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/speedText"
+        android:id="@+id/speedAndFeedTextView"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/formula_String"
+        android:id="@+id/formulaTextView"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/bottom_margin"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/surface_ft"
+                    android:id="@+id/surfaceFtTextView" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/surfaceFtEditText"
+                    android:width="@dimen/diameterEditText"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/diameterString"
+                    android:id="@+id/diameterTextView" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/diameterEditText"
+                    android:width="@dimen/diameterEditText"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center" />
+            </TableRow>
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calculateSpeedString"
+                    android:id="@+id/calculateButton"
+                    android:visibility="visible"
+                    android:onClick="calculateSpeed" />
+
+    </TableLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/answerTextView"
+        android:gravity="center|center_horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="15dp"
+        android:layout_marginTop="10dp" />
+
+   <View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/feedString"
+        android:id="@+id/feedTextView"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/feed_speed_x_feed_per_tooth_x_number_of_flutes"
+        android:id="@+id/formulaFeedTextView"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/bottom_margin"
+        android:textSize="15sp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedTable">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/fpt"
+                android:id="@+id/feedPerToothTextView" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:id="@+id/feedPerTootheditText"
+                android:width="@dimen/diameterEditText"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/number_flutes"
+                android:id="@+id/numberOfFlutsTextView" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:width="@dimen/diameterEditText"
+                android:id="@+id/numberOfFluteseditText"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center" />
+        </TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculateSpeedString"
+                android:id="@+id/calculateFeedButton"
+                android:visibility="visible"
+                android:onClick="calculateFeed" />
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/answerFeedTextView"
+        android:gravity="center|center_horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="15dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
